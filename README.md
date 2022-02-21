@@ -4,7 +4,7 @@
   This is a pamphlet that I wrote simultaneously as I was proceeding with the online specialization of <b>"Web design for everybody: basics of web development and coding"</b> presented by the University of Michigan in the Coursera platform.
 </p>
 <p>
-  This Specialization is divided into 4 courses as listed below
+  This specialization is divided into 4 courses as listed below:
 <ul>
   <li>Basics: Introduction to HTML5</li>
   <li>Styling: Introduction to CSS3</li>
