@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="C:\Users\nimar\Desktop\Introduction to HTML\N-HTML-codes\Images\icon.PNG">
+  <title>Images, Icons, Alternative text</title>
+  <script src="https://kit.fontawesome.com/8d351cf50d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <main>
+    <h1>Images</h1>
+    <p>
+      In this part of the second week, we are discussing about the image tag, which is more than a simple tag for inserting images!
+    </p>
+  </main>
+
+  <section>
+    <h1>I. SIZE</h1>
+    <article>
+      <h2>1. Why size matters?</h2>
+      <p>
+        Size of the image matters. As all the images must be downloaded in the browser, you must <i>optimize</i> the size and the quality of the image due to its importance and attention it gets.
+      </p>
+      <p>
+        On the other hand, if you the most of your audience paltform (i.e. using PC, mobile, tablet etc.), you can change the quality and size of the image to satisfy the most of you target audience.
+      </p>
+      <p>
+        <b>NOTE:</b> Each image requires an HTTP(Hypertext Transfer Protocol) request to be downloaded.
+      </p>
+    </article>
+
+    <article>
+      <h2>2. How to change the size of our images?</h2>
+      <p>
+        There are two main way exist:
+        <ol>
+          <li>Change the original file size: You <i>permanently</i> changing the size of a <i>local</i> image file. So, what about linking to an image which the source is in the web? </li>
+          <li>Use width/length <i>attribute</i>: We can either use <b>pixels</b> or <body>percentage.</body></li>
+        </ol>
+        <h3>Example of using width/length attribute, for an image sourced on the internet</h3>
+
+        <figure>
+          <img src="https://cdn.motor1.com/images/mgl/bqwYM/s3/mercedes-amg-gt-63-s-e-performance.jpg" alt="Mercedes-AMG GT 63 SE" title="a">
+          <img src="https://cdn.motor1.com/images/mgl/bqwYM/s3/mercedes-amg-gt-63-s-e-performance.jpg" alt="Mercedes-AMG GT 63 SE" title="b" width="500px">
+          <img src="https://cdn.motor1.com/images/mgl/bqwYM/s3/mercedes-amg-gt-63-s-e-performance.jpg" alt="Mercedes-AMG GT 63 SE" title="c" width="500" height="500">
+          <img src="https://cdn.motor1.com/images/mgl/bqwYM/s3/mercedes-amg-gt-63-s-e-performance.jpg" alt="Mercedes-AMG GT 63 SE" title="d" width="30%">
+          <figcaption>Different sizes of one picture: a)Original b)Same aspect ratio c)Manual aspect ratio (skewd image, harding the value) d)Percentage with same aspect ratio</figcaption>
+        </figure>
+      </p>
+      <p>
+        <b>NOTE:</b> Changing the size proportionally by percentage is of <b>great importance!</b> It is in fact proportional to 100% zoom of the <i>browser</i> and not the image itself. So, it plays an important role when you want your image to be looked perfectly in all the platforms!
+      </p>
+    </article>
+  </section>
+
+  <section>
+    <h1>II. OTHER FEATURES</h1>
+    <article>
+      <h2>1. How to add image in the title bar? (Web logo)</h2>
+      <p>It is so interesting to have the logo of the website on the title bar! Here is how to do it. It must be written in the <b>head</b> section of the code before the title itself and not the <b>body</b>. You must use the &lt;link&gt; tag for this purpose:<br>
+        <strong>&lt;link rel="icon" type="image/png(ONLY PNG! YOU CANNOT USE jpeg OR gif)" href="" /&gt;</strong> 
+      </p>
+    </article>
+
+    <article>
+      <h2>2. Alternative text (alt) attribute</h2>
+      <p>
+        The main aim of this attribute is to provide a textual alternative for a non-text content. For example, you can provide a text by which people who are not able to see the image for any reason (the outdated browser, not-convenient device and etc.), would be still able to have a sense of the image. We can list the puposes as below:
+        <ul>
+          <li>Provide info of the image for people using screen readers</li>
+          <li>Good alternative to be displayed instead of images</li>
+          <li>PROVIDING SEMANTIC MEANING OF AN IMAGE FOR THE SEARCH ENGINES. THIS COULD BE SO PRACTICAL.</li>
+        </ul>
+      </p>
+      <p>
+        Pay attention that the alternative text you are adding to an image be:
+        <ul>
+          <li>Accurate</li>
+          <li>Succinct (summarized)</li>
+          <li>Not being redundant</li>
+          <li>Not be a caption and explanation of the image!</li>
+        </ul>
+      </p>
+      <p>
+        <b>NOTE:</b> Remember that not all images must have had alternative text attribute. For example decorative and non-informative text can be without alternative text. To keep the structure of the perfect image tag, you can add <i>alt</i> attribute and put nothing inside the <i>""</i> (leaving it null).
+      </p>
+      <p>
+        In <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/" target="_blank">This Link</a> you can find the decision making tree through which you can have a perfect alternative text for you non-textual (mainly image) content.
+      </p>
+    </article>
+
+    <article>
+      <h2>3. Font Awsome</h2>
+      <p>
+        At the begining of this article, it worths mentioning that in a perfect world, you can design all the icons and pictures you need for your websiete. However, there are some websites, that presents (sells) some of the usual icons and pictures that you can take advantage of their efforts.
+      </p>
+      <p>
+        One of these resources is <a href="https://fontawesome.com/" target="_blank">Font Awsome</a>.<br>
+        <i class="fa-brands fa-twitter fa-md"></i>
+        <a href="https://www.instagram.com/nimarzm/" target="_blank"><i class="fa-brands fa-instagram fa-xs"></i></a>
+        <i class="fa-brands fa-linkedin fa-lg"></i>
+        <a href="https://soundcloud.com/nimarzm" target="_blank" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud fa-3x"></i></a>
+      </p>
+      <p>
+        <b>NOTE:</b> Using <i>aria-label</i> attribute in the link tag, makes the link semantically independent from the icon. So, this would be more professional in terms of acessibility and better to be used.
+      </p>
+      <p>
+        At this point, this seems more CSS than HTML! Let's see...
+      </p>
+    </article>
+  </section>
+</body>
+
+
+</html>
